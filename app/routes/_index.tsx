@@ -10,7 +10,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="max-w-screen-sm mx-auto">
-      <h1 className="text-2xl">this is a test</h1>
+      <h1 className="text-2xl">
+        Load Discourse comment iframe on button click
+      </h1>
     </div>
   );
 }

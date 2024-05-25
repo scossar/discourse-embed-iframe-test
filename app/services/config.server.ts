@@ -9,6 +9,15 @@ const DiscourseEnvSchema = z.object({
   NONCE_SECRET: z.string(),
 });
 
+export type DiscourseRawEnv = {
+  baseUrl: string;
+  apiKey: string;
+  ssoSecret: string;
+  sessionSecret: string;
+  webhookSecret: string;
+  nonceSecret: string;
+};
+
 export function discourseEnv() {
   let discourseEnv;
   try {
